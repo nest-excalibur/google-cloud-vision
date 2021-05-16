@@ -1,0 +1,38 @@
+{
+  "name": "google-cloud-vision",
+  "version": "0.0.1-beta",
+  "description": "Google Cloud Vision module for NestJS framework",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "publish": "tsc && npm publish --access public",
+    "lint": "eslint . --ext .ts"  },
+  "devDependencies": {
+    "typescript": "^4.2.3",
+    "@types/express": "^4.17.3",
+    "@nestjs/common": "7.6.15",
+    "@nestjs/core": "^7.6.15",
+    "@nestjs/platform-express": "^7.6.15",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.24.0"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^2.3.2",
+    "rxjs": "^7.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "google-cloud",
+    "vision",
+    "nestjs"
+  ],
+  "author": "Andres Velasco",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/nest-excalibur/google-cloud-vision.git"
+  }
+}
