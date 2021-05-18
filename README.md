@@ -47,17 +47,15 @@ export class SomeController {
       @UseInterceptors(
         FileInterceptor('image'),
       )
-      async inspectImage(
-        @UploadedFile() imageFile,
-      ) {
+      async inspectImage(@UploadedFile() imageFile) {
         // Fecth the file and get it's buffer.  
         const imageBuffer = imageFile.buffer;
         // Invoke the respective service methods
-        const text = await this._googleCloudVisionApiService.detectText(imageBuffer);
-        const faces = await this._googleCloudVisionApiService.detectFaces(imageBuffer);
-        const explictContent = await this._googleCloudVisionApiService.detectExplicitContent(imageBuffer);
-        const objects = await this._googleCloudVisionApiService.detectMultipleObjects(imageBuffer);
-        const properties = await this._googleCloudVisionApiService.detectProperties(imageBuffer);
+        const text = await this.googleCloudVisionAService.detectText(imageBuffer);
+        const faces = await this.googleCloudVisionAService.detectFaces(imageBuffer);
+        const explictContent = await this.googleCloudVisionAService.detectExplicitContent(imageBuffer);
+        const objects = await this.googleCloudVisionAService.detectMultipleObjects(imageBuffer);
+        const properties = await this.googleCloudVisionAService.detectProperties(imageBuffer);
         return {
           text,
           faces,

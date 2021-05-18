@@ -1,6 +1,6 @@
 {
   "name": "@nest-excalibur/google-cloud-vision",
-  "version": "0.0.1-beta",
+  "version": "0.0.1",
   "description": "Google Cloud Vision module for NestJS framework",
   "main": "lib/index.js",
   "scripts": {
