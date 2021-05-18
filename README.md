@@ -7,9 +7,16 @@
 
 # Google Cloud Vision
 
-Import module: `GoogleCloudVisionModule` :
+## Installation
+```shell
+npm i @nest-excalibur/google-cloud-vision --save
+```
 
-``` typescript
+
+Import module: `GoogleCloudVisionModule` :
+Installation
+
+```typescript
 import { GoogleCloudVisionModule } from '@nest-excalibur/google-cloud-vision/lib';
  
 @Module({
@@ -25,7 +32,7 @@ export class SomeModule {
 
 Inject the `GoogleCloudVisionService` in your controller
 
-``` typescript
+```typescript
  import { GoogleCloudVisionService } from '@nest-excalibur/google-cloud-vision/lib';
 
 @Controller('some')
